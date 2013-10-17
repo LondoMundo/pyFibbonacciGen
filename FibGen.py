@@ -3,9 +3,9 @@ first=0
 second=1
 fib=[1,1]
 n=1
-m=raw_input("how many fibbonacci numbers do you want to go up to?")
+m=int(raw_input("how many fibbonacci numbers do you want to go up to?"))
 while n<m:
-    
+    length = len(fib)
     fibBuf=fib[first]+fib[second]
 
     first=first+1
@@ -14,6 +14,6 @@ while n<m:
     second=second+1
 
     fib.append(fibBuf)
-    print fib
+    print fib[length]
     n+=1
 
